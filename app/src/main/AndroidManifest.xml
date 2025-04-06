@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Location"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ClientDemandesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AgentDemandesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OffreDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChercherOffresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MesDemandesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Location" />
+        <activity
+            android:name=".activities.ClientHomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Location" />
+        <activity
+            android:name=".activities.AgentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ModifierOffreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AjouterOffreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailDemandeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ListeDemandesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailOffreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ListeOffresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AuthentificationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
